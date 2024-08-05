@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <BrowserRouter>
           <AuthorizerProvider
             config={{
-              authorizerURL: 'http://localhost:8080',
+              authorizerURL: 'authorizer-production-8a03.up.railway.app',
               redirectURL: window.location.origin,
             }}
             onStateChangeCallback={async ({ user, token }: any) => {
