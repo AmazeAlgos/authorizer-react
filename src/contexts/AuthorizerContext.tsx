@@ -18,7 +18,7 @@ import { hasWindow } from '../utils/window';
 
 const AuthorizerContext = createContext<AuthorizerContextPropsType>({
   config: {
-    authorizerURL: 'authorizer-production-8a03.up.railway.app',
+    authorizerURL: 'https://authorizer-production-8a03.up.railway.app',
     redirectURL: '/',
     client_id: '8ea026bd-1bec-4b97-8b11-2f7d6e0ac0e7',
     is_google_login_enabled: false,
@@ -47,7 +47,7 @@ const AuthorizerContext = createContext<AuthorizerContextPropsType>({
   setUser: () => {},
   setAuthData: () => {},
   authorizerRef: new Authorizer({
-    authorizerURL: `authorizer-production-8a03.up.railway.app`,
+    authorizerURL: 'https://authorizer-production-8a03.up.railway.app',
     redirectURL: hasWindow() ? window.location.origin : '/',
     clientID: '8ea026bd-1bec-4b97-8b11-2f7d6e0ac0e7',
   }),
