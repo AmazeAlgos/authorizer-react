@@ -18,9 +18,9 @@ import { hasWindow } from '../utils/window';
 
 const AuthorizerContext = createContext<AuthorizerContextPropsType>({
   config: {
-    authorizerURL: 'https://authorizer-production-8a03.up.railway.app',
+    authorizerURL: '',
     redirectURL: '/',
-    client_id: '8ea026bd-1bec-4b97-8b11-2f7d6e0ac0e7',
+    client_id: '',
     is_google_login_enabled: false,
     is_github_login_enabled: false,
     is_facebook_login_enabled: false,
