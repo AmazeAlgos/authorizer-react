@@ -47,9 +47,9 @@ const AuthorizerContext = createContext<AuthorizerContextPropsType>({
   setUser: () => {},
   setAuthData: () => {},
   authorizerRef: new Authorizer({
-    authorizerURL: `http://localhost:8080`,
+    authorizerURL: `authorizer-production-8a03.up.railway.app`,
     redirectURL: hasWindow() ? window.location.origin : '/',
-    clientID: '',
+    clientID: '8ea026bd-1bec-4b97-8b11-2f7d6e0ac0e7',
   }),
   logout: async () => {},
 });
